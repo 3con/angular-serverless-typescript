@@ -1,0 +1,30 @@
+service: angular-serverless-typescript
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  stage: dev
+  region: eu-west-1
+  profile: default
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpack: ./webpack/webpack.serverless.js
+
+package:
+  individually: true
+  exclude:
+    - "**"
+
+functions:
+  users:
+    handler: api/users/index.route
+    events:
+      - http:
+          path: users
+          method: get
+    package:
+      include:
+        - api/users/**
