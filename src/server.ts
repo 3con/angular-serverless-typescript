@@ -10,8 +10,8 @@ app.set('port', process.env.PORT || 5000);
 app.set('json spaces', 2);
 
 // Serve static files
-app.use('/client.js', serveStatic(path.resolve(__dirname, '../target/client.js')));
-app.use('/client.js.map', serveStatic(path.resolve(__dirname, '../target/client.js.map')));
+app.use('/client.js', serveStatic(path.resolve(__dirname, '../dist/client.js')));
+app.use('/client.js.map', serveStatic(path.resolve(__dirname, '../dist/client.js.map')));
 
 // Setup API router
 const api = express.Router();
@@ -23,7 +23,7 @@ api.get('/', (req, res) => res.send({ success: true }));
 
 // Everything else gets just index.html
 app.get('*', (req, res) => {
-  res.sendFile('index.html', { root: path.join(__dirname, '../target') });
+  res.sendFile('index.html', { root: path.join(__dirname, '../dist') });
 });
 
 // Server
