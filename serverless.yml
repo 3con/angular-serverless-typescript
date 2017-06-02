@@ -11,7 +11,7 @@ plugins:
   - serverless-webpack
 
 custom:
-  webpack: ./webpack/webpack.serverless.js
+  webpack: ./webpack/webpack.serverless.ts
 
 package:
   individually: true

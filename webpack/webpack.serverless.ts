@@ -1,5 +1,5 @@
-const path = require('path');
-const webpack = require('webpack');
+import * as path from 'path';
+import * as webpack from 'webpack';
 
 const AggressiveMergingPlugin = webpack.optimize.AggressiveMergingPlugin;
 const OccurrenceOrderPlugin = webpack.optimize.OccurrenceOrderPlugin;
