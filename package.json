@@ -59,7 +59,7 @@
   "devDependencies": {
     "aws-sdk": "^2.60.0",
     "serverless": "^1.14.0",
-    "serverless-webpack": "github:elastic-coders/serverless-webpack",
+    "serverless-webpack": "github:jussikinnula/serverless-webpack",
     "webpack-dev-server": "~2.4.5"
   }
 }
