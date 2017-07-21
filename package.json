@@ -50,15 +50,15 @@
     "style-loader": "^0.18.2",
     "ts-helpers": "^1.1.2",
     "ts-loader": "^2.3.1",
-    "ts-node": "^3.2.0",
+    "ts-node": "^3.2.1",
     "typescript": "^2.4.2",
     "webpack": "^3.3.0",
     "webpack-node-externals": "^1.6.0",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
-    "aws-sdk": "^2.87.0",
-    "serverless": "^1.17.0",
+    "aws-sdk": "^2.88.0",
+    "serverless": "^1.18.0",
     "serverless-webpack": "github:jussikinnula/serverless-webpack",
     "webpack-dev-server": "~2.5.1"
   }
